@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://eci.ufmg.br/obitopolicial#"
+     xml:base="http://eci.ufmg.br/obitopolicial"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://megakosmos.com/owl/obitopolicial"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://megakosmos.com/owl/obitopolicial#fazParte -->
+
+    <owl:ObjectProperty rdf:about="http://megakosmos.com/owl/obitopolicial#fazParte">
+        <rdfs:domain rdf:resource="http://megakosmos.com/owl/obitopolicial#Policial"/>
+        <rdfs:range rdf:resource="http://megakosmos.com/owl/obitopolicial#DepartamentoPolicial"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://megakosmos.com/owl/obitopolicial#possuiObito -->
+
+    <owl:ObjectProperty rdf:about="http://megakosmos.com/owl/obitopolicial#possuiObito">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://megakosmos.com/owl/obitopolicial#Policial"/>
+        <rdfs:range rdf:resource="http://megakosmos.com/owl/obitopolicial#Obito"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://megakosmos.com/owl/obitopolicial#causaObito -->
+
+    <owl:DatatypeProperty rdf:about="http://megakosmos.com/owl/obitopolicial#causaObito">
+        <rdfs:domain rdf:resource="http://megakosmos.com/owl/obitopolicial#Obito"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://megakosmos.com/owl/obitopolicial#dataObito -->
+
+    <owl:DatatypeProperty rdf:about="http://megakosmos.com/owl/obitopolicial#dataObito">
+        <rdfs:domain rdf:resource="http://megakosmos.com/owl/obitopolicial#Obito"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://megakosmos.com/owl/obitopolicial#estadoDepartamento -->
+
+    <owl:DatatypeProperty rdf:about="http://megakosmos.com/owl/obitopolicial#estadoDepartamento">
+        <rdfs:domain rdf:resource="http://megakosmos.com/owl/obitopolicial#DepartamentoPolicial"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://megakosmos.com/owl/obitopolicial#nomeDepartamento -->
+
+    <owl:DatatypeProperty rdf:about="http://megakosmos.com/owl/obitopolicial#nomeDepartamento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://megakosmos.com/owl/obitopolicial#DepartamentoPolicial"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://megakosmos.com/owl/obitopolicial#nomePolicial -->
+
+    <owl:DatatypeProperty rdf:about="http://megakosmos.com/owl/obitopolicial#nomePolicial">
+        <rdfs:domain rdf:resource="http://megakosmos.com/owl/obitopolicial#Policial"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://megakosmos.com/owl/obitopolicial#DepartamentoPolicial -->
+
+    <owl:Class rdf:about="http://megakosmos.com/owl/obitopolicial#DepartamentoPolicial"/>
+    
+
+
+    <!-- http://megakosmos.com/owl/obitopolicial#Obito -->
+
+    <owl:Class rdf:about="http://megakosmos.com/owl/obitopolicial#Obito"/>
+    
+
+
+    <!-- http://megakosmos.com/owl/obitopolicial#Policial -->
+
+    <owl:Class rdf:about="http://megakosmos.com/owl/obitopolicial#Policial"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://megakosmos.com/owl/obitopolicial#rambo -->
+
+    <owl:NamedIndividual rdf:about="http://megakosmos.com/owl/obitopolicial#rambo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://megakosmos.com/owl/obitopolicial#DepartamentoPolicial"/>
+            <rdf:Description rdf:about="http://megakosmos.com/owl/obitopolicial#Obito"/>
+            <rdf:Description rdf:about="http://megakosmos.com/owl/obitopolicial#Policial"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
